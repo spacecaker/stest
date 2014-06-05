@@ -1,5 +1,5 @@
 version: 1.5.2
-apkFileName: secsettings.apk
+apkFileName: settings.apk
 isFrameworkApk: false
 usesFramework:
   ids:
@@ -11,4 +11,4 @@ sdkInfo:
 packageInfo:
   cur_package: com.android.settings
   orig_package: com.android.settings
-compressionType: false
+compressionType: true
