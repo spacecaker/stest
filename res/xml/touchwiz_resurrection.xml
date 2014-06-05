@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/settings_ics_google"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <PreferenceCategory android:title="@string/apps" />
+    <com.android.settings.IconPreferenceScreen android:title="@string/applications_settings" android:key="applications_settings" settings:icon="@drawable/ic_settings_applications">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.ApplicationSettings" />
+    </com.android.settings.IconPreferenceScreen>
+    <com.android.settings.IconPreferenceScreen android:title="@string/call_settings_title" android:key="call_settings" settings:icon="@drawable/ic_settings_call">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.CallFeaturesSetting" />
+    </com.android.settings.IconPreferenceScreen>
+    <com.android.settings.IconPreferenceScreen android:title="@string/voice_input_output_settings" settings:icon="@drawable/ic_settings_speech">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.VoiceInputOutputSettings" />
+    </com.android.settings.IconPreferenceScreen>
+</PreferenceScreen>

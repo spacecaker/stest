@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/program_settings_tab" android:key="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <PreferenceCategory android:title="@string/accounts" android:key="manageAccountsCategory" />
+    <com.android.settings.IconPreferenceScreen android:background="#ff003c4e" android:title="@string/sync_settings" android:key="sync_settings" settings:icon="@drawable/ic_settings_sync">
+        <intent android:action="android.settings.SYNC_SETTINGS" />
+    </com.android.settings.IconPreferenceScreen>
+    <com.android.settings.IconPreferenceScreen android:background="#ff003c4e" android:title="@string/privacy_settings" android:key="privacy_settings" settings:icon="@drawable/ic_settings_privacy">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.PrivacySettings" />
+    </com.android.settings.IconPreferenceScreen>
+    <PreferenceCategory android:title="@string/settings_ics_system" />
+    <com.android.settings.IconPreferenceScreen android:background="#ff003c4e" android:title="@string/language_settings" settings:icon="@drawable/ic_settings_language">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.LanguageSettings" />
+    </com.android.settings.IconPreferenceScreen>
+    <com.android.settings.IconPreferenceScreen android:background="#ff003c4e" android:title="@string/date_and_time_settings_title" settings:icon="@drawable/ic_settings_date_time">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.DateTimeSettings" />
+    </com.android.settings.IconPreferenceScreen>
+    <com.android.settings.IconPreferenceScreen android:background="#ff003c4e" android:title="@string/tw_battery" settings:icon="@drawable/ic_settings_battery">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.fuelgauge.PowerUsageSummary" />
+    </com.android.settings.IconPreferenceScreen>
+    <com.android.settings.IconPreferenceScreen android:background="#ff003c4e" android:title="@string/power_saving" settings:icon="@drawable/ic_settings_quickpanel_quick">
+        <intent android:targetPackage="com.lidroid.toolbox" android:action="com.lidroid.toolbox.POWERSAVEMODE" android:targetClass="com.lidroid.toolbox.powersaving.PowerSavingActivity" />
+    </com.android.settings.IconPreferenceScreen>
+    <com.android.settings.IconPreferenceScreen android:background="#ff003c4e" android:title="@string/storage_settings" settings:icon="@drawable/ic_settings_storage">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.deviceinfo.Memory" />
+    </com.android.settings.IconPreferenceScreen>
+    <com.android.settings.IconPreferenceScreen android:background="#ff003c4e" android:title="@string/security_settings_title" android:key="security_settings_chooser" settings:icon="@drawable/ic_settings_security">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.SecuritySettings" />
+    </com.android.settings.IconPreferenceScreen>
+    <com.android.settings.IconPreferenceScreen android:background="#ff003c4e" android:title="@string/help" settings:icon="@drawable/ic_help">
+        <intent android:targetPackage="com.touchwiz.Resurection" android:action="android.intent.action.MAIN" android:targetClass="com.touchwiz.Resurection.TwDevelopers" />
+    </com.android.settings.IconPreferenceScreen>
+    <com.android.settings.IconPreferenceScreen android:background="#ff003c4e" android:title="@string/tw_rom" settings:icon="@drawable/quickpanelicon">
+        <intent android:targetPackage="com.lidroid.parts" android:action="android.intent.action.MAIN" android:targetClass="com.lidroid.parts.MainActivity" />
+    </com.android.settings.IconPreferenceScreen>
+    <com.android.settings.IconPreferenceScreen android:background="#ff003c4e" android:title="@string/about_settings" settings:icon="@drawable/ic_settings_about">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.DeviceInfoSettings" />
+    </com.android.settings.IconPreferenceScreen>
+</PreferenceScreen>

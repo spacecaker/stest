@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:paddingLeft="16.0dip" android:paddingRight="?android:scrollbarSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relativerly" android:paddingTop="6.0dip" android:paddingRight="8.0dip" android:paddingBottom="6.0dip" android:layout_width="112.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="18.0sp" android:textColor="?android:ordering" android:ellipsize="marquee" android:id="@id/mwtitle" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Open in multi window" android:singleLine="true" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="16.0sp" android:textColor="?android:fragment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="View content in multi window view when you open more than one app" android:maxLines="10" android:layout_below="@id/mwtitle" android:layout_alignLeft="@id/mwtitle" />
+    </RelativeLayout>
+    <com.spacecaker.coee.mws.ImageSpace android:gravity="right" android:id="@id/img" android:focusable="false" android:clickable="false" android:layout_width="84.0px" android:layout_height="48.0px" android:layout_marginTop="15.0dip" android:layout_alignRight="@id/relativerly" />
+    <include android:layout_width="0.0dip" android:layout_height="0.0dip" layout="@layout/empty_pref" />
+</LinearLayout>

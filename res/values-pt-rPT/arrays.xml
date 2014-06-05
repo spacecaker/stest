@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="customizedkey_popup">
+        <item>Substituir atalho</item>
+        <item>Repor tecla personalizada</item>
+    </string-array>
+    <string-array name="auto_launch_entries">
+        <item>Sempre</item>
+        <item>Ecrã inactivo</item>
+        <item>Nunca</item>
+    </string-array>
+    <string-array name="mode_entries">
+        <item>Dinâmico</item>
+        <item>Padrão</item>
+        <item>Filme</item>
+    </string-array>
+    <string-array name="clock_position_entries">
+        <item>Topo</item>
+        <item>Meio</item>
+        <item>Em baixo</item>
+    </string-array>
+    <string-array name="clock_position_entries_land">
+        <item>Esquerda</item>
+        <item>Centro</item>
+        <item>Direita</item>
+    </string-array>
+</resources>

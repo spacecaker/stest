@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/screen_display"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <PreferenceCategory android:title="@string/home_screen" />
+    <PreferenceCategory android:title="@string/lock_screen" />
+    <PreferenceScreen android:title="@string/wallpaper" android:key="lockscreen_wallpaper" android:summary="">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.LockScreenWallpaper" />
+    </PreferenceScreen>
+</PreferenceScreen>

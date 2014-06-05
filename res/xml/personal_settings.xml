@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/personal_settings_tab" android:key="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <PreferenceCategory android:title="@string/settings_ics_device" />
+    <com.android.settings.IconPreferenceScreen android:background="#ff003c4e" android:title="@string/sound_settings_title" settings:icon="@drawable/ic_settings_sound">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.SoundSettings" />
+    </com.android.settings.IconPreferenceScreen>
+    <com.android.settings.IconPreferenceScreen android:background="#ff003c4e" android:title="@string/display_settings_title" settings:icon="@drawable/ic_settings_display">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.DisplaySettings" />
+    </com.android.settings.IconPreferenceScreen>
+    <com.android.settings.IconPreferenceScreen android:background="#ff003c4e" android:title="@string/uau" android:key="wallpapers_settings" settings:icon="@drawable/ic_settings_wallpaper">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.LockScreenWallpaper" />
+    </com.android.settings.IconPreferenceScreen>
+    <com.android.settings.IconPreferenceScreen android:background="#ff003c4e" android:title="@string/lk_settings_title" android:key="lk_display" settings:icon="@drawable/ic_lk_display">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.ScreenDisplay" />
+    </com.android.settings.IconPreferenceScreen>
+    <com.android.settings.IconPreferenceScreen android:background="#ff003c4e" android:title="@string/multi" android:key="multiwindow_option" settings:icon="@drawable/ic_multi">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.spacecaker.coee.mws.ImageSpace" />
+    </com.android.settings.IconPreferenceScreen>
+    <com.android.settings.IconPreferenceScreen android:background="#ff003c4e" android:title="@string/toggles" settings:icon="@drawable/ic_setting_notificationpanel">
+        <intent android:targetPackage="com.spacecakers.text.custtext" android:action="android.intent.action.MAIN" android:targetClass="com.spacecakers.text.custtext.CustomSettings" />
+    </com.android.settings.IconPreferenceScreen>
+    <PreferenceCategory android:title="@string/personalization" />
+    <com.android.settings.IconPreferenceScreen android:background="#ff003c4e" android:title="@string/hs_settings_title" android:key="hs_display" settings:icon="@drawable/ic_hs_display">
+        <intent android:targetPackage="com.cooee.launcherS4" android:action="android.intent.action.MAIN" android:targetClass="com.iLoong.launcher.SetupMenu.Actions.DesktopAction$DesktopSettingActivity" />
+    </com.android.settings.IconPreferenceScreen>
+    <com.android.settings.IconPreferenceScreen android:background="#ff003c4e" android:title="@string/accessibility_settings" settings:icon="@drawable/ic_settings_accessibility">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.AccessibilitySettings" />
+    </com.android.settings.IconPreferenceScreen>
+</PreferenceScreen>

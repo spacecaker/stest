@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/settings_label_launcher" android:key="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <PreferenceCategory android:title="@string/settings_ics_radio" />
+    <com.android.settings.IconCheckBoxPreference android:title="Wi-Fi" android:key="toggle_wifi" settings:icon="@drawable/ic_settings_wireless" />
+    <com.android.settings.IconCheckBoxPreference android:title="Bluetooth" android:key="toggle_bluetooth" settings:icon="@drawable/ic_settings_bluetooth2" />
+    <com.android.settings.IconPreferenceScreen android:title="@string/data_quick_toggle_title" settings:icon="@drawable/ic_settings_data">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.Settings" />
+    </com.android.settings.IconPreferenceScreen>
+    <com.android.settings.IconPreferenceScreen android:title="@string/tw_more" settings:icon="@drawable/ic_settings_more">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.WirelessSettings" />
+    </com.android.settings.IconPreferenceScreen>
+    <CheckBoxPreference android:layout="@layout/empty_pref" android:title="@string/sync_settings" android:key="sync_settings" />
+    <CheckBoxPreference android:layout="@layout/empty_pref" android:title="@string/customizedkey_settings_title" android:key="customizedkey_settings" />
+    <CheckBoxPreference android:layout="@layout/empty_pref" android:title="@string/call_settings_title" android:key="call_settings" />
+</PreferenceScreen>

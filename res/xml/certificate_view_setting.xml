@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/certificate_settings_title" android:key="preference_root"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/certificate_view_serial" android:selectable="true" android:key="certificate_view_serial" android:summary="" />
+    <Preference android:title="@string/certificate_view_issuer" android:selectable="true" android:key="certificate_view_issuer" android:summary="" />
+    <Preference android:title="@string/certificate_view_startdate" android:selectable="true" android:key="certificate_view_startdate" android:summary="" />
+    <Preference android:title="@string/certificate_view_finaldate" android:selectable="true" android:key="certificate_view_finaldate" android:summary="" />
+    <Preference android:title="@string/certificate_view_subject" android:selectable="true" android:key="certificate_view_subject" android:summary="" />
+    <Preference android:title="@string/certificate_view_publickey" android:selectable="true" android:key="certificate_view_publickey" android:summary="" />
+    <Preference android:title="@string/certificate_view_signature" android:selectable="true" android:key="certificate_view_signature" android:summary="" />
+</PreferenceScreen>

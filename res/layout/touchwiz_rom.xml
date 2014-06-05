@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/tab_indicator" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/tabIcon" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="1.0px" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:ellipsize="marquee" android:gravity="center" android:id="@id/tabTitle" android:focusable="true" android:layout_width="82.0dip" android:layout_height="40.0dip" android:layout_marginLeft="1.0px" android:layout_marginRight="1.0px" android:scrollHorizontally="true" android:shadowColor="#ff000000" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_weight="1.0" style="?android:attr/tabWidgetStyle" />
+</RelativeLayout>

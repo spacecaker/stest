@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/screen_display"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <PreferenceCategory android:title="@string/home_screen" />
+    <PreferenceCategory android:title="@string/lock_screen" />
+    <PreferenceScreen android:title="@string/wallpaper" android:key="lockscreen_wallpaper" android:summary="">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.LockScreenWallpaper" />
+    </PreferenceScreen>
+    <CheckBoxPreference android:title="@string/display_clock" android:key="clock" android:summary="@string/display_clock_summary" />
+    <ListPreference android:persistent="false" android:entries="@array/clock_position_entries" android:title="@string/clock_position" android:key="clock_position" android:entryValues="@array/clock_position_values" />
+    <CheckBoxPreference android:title="@string/display_weather" android:key="weather" android:summary="@string/display_weather_summary" />
+    <PreferenceScreen android:title="@string/display_weather_settings" android:key="weather_settings" android:summary="@string/display_weather_settings_summary" android:dependency="weather" />
+    <PreferenceScreen android:title="Owner information" android:key="lockscreen_text" android:summary="Show user information on lock screen">
+        <intent android:targetPackage="com.touchwizres.lifecompaniontext" android:action="android.intent.action.MAIN" android:targetClass="com.touchwizres.lifecompaniontext.CompanionText" />
+    </PreferenceScreen>
+    <PreferenceCategory android:title="Other" />
+    <PreferenceScreen android:title="Music control" android:key="locker_music" android:summary="Show music control on lock screen">
+        <intent android:targetPackage="com.spacecaker.musiclock" android:action="android.intent.action.MAIN" android:targetClass="com.spacecaker.musiclock.settings.MusicSettings" />
+    </PreferenceScreen>
+</PreferenceScreen>
